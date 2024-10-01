@@ -1,3 +1,11 @@
+import React from 'react';
+import { SellingCard } from '../src/components';
+import { data } from '../src/data/products';
+
 export default function Page() {
-  return <h1>Hello, Next.js!</h1>;
+  return (
+    <>
+      <SellingCard data={data} title={'NEW ARRIVALS'} buttonName={'View All'} />
+    </>
+  )
 }
