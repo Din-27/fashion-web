@@ -1,25 +1,19 @@
-import React from 'react'
+import React from "react";
 
-export default function index() {
-    return (
-        <div
-            className="text-sm font-medium text-center text-gray-500 border-gray-200 dark:text-gray-400 dark:border-gray-700">
-            <ul className="lg:grid grid-cols-3 w-full flex overflow-x-auto -mb-px text-base lg:text-2xl">
-                <li className="me-2">
-                    <a href="#"
-                        className="inline-block w-full p-4 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300">Product
-                        Details</a>
-                </li>
-                <li className="me-2">
-                    <a href="#"
-                        className="inline-block w-full p-4 text-black border-b-2 border-black rounded-t-lg active"
-                        aria-current="page">Rating & Reviews</a>
-                </li>
-                <li className="me-2">
-                    <a href="#"
-                        className="inline-block w-full p-4 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300">FAQs</a>
-                </li>
-            </ul>
-        </div>
-    )
+export default function index(props: any) {
+  return (
+    <div className="border-gray-200 text-center text-sm font-medium text-gray-500 dark:border-gray-700 dark:text-gray-400">
+      <ul className="-mb-px flex w-full grid-cols-3 gap-0 overflow-x-auto border-b text-base lg:grid lg:text-2xl">
+        {props.navigations.map((x, y) => (
+          <li onClick={() => props.buttonPathActive(x.path)} key={y} className="me-2">
+            <button
+              className={`${x.active ? "border-b-2 text-black" : "text-gray-400"} inline-block w-full rounded-t-lg border-black p-4`}
+            >
+              {x.name}
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }

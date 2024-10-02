@@ -43,12 +43,14 @@ export default function Page() {
         title={"NEW ARRIVALS"}
         buttonName={buttonNameArrival}
         buttonClick={onClickViewAllArrival}
+        buttonShow
       />
       <SellingCard
         data={productTopSelling}
         title={"TOP SELLING"}
         buttonName={buttonNameTopSelling}
         buttonClick={onClickViewAllTopSelling}
+        buttonShow
       />
       <BrowseCategoryGallery data={undefined} />
       <CarouselReviews title={"OUR CUSTOMER HAPPY"} data={[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]} />

@@ -1,7 +1,6 @@
 import React from "react";
 
-export default function index() {
-  const data = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].slice(0, 6);
+export default function index(props: any) {
   return (
     <div className="mt-6 space-y-4">
       <span className="ml-5 flex items-center">
@@ -9,7 +8,7 @@ export default function index() {
         <span className="text-base lg:text-lg">(451)</span>
       </span>
       <div className="flex h-[450px] grid-cols-2 flex-col gap-0 space-y-6 overflow-y-auto rounded-lg border px-2 py-4 lg:grid lg:h-full lg:gap-10 lg:space-y-0 lg:overflow-visible lg:border-none">
-        {data.map((x, y) => (
+        {props.data.map((x, y) => (
           <div
             key={y}
             className="h-[200px] w-full rounded-lg border border-gray-200 bg-white px-8 py-6 shadow hover:bg-gray-100"

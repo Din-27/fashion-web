@@ -3,8 +3,12 @@ import React from "react";
 export default function Card({ index, item }) {
   return (
     <div key={index} className="mx-auto">
-      <div className="w-[195px] lg:w-[255px]">
-        <img className="w-[195px] rounded-3xl lg:w-[255px]" src={item.image} alt="" />
+      <div className="h-[196px] w-[195px] lg:h-[250px] lg:w-[255px]">
+        <img
+          className="h-[196px] w-[195px] rounded-3xl lg:h-[250px] lg:w-[255px]"
+          src={item.image}
+          alt=""
+        />
       </div>
       <div className="label ml-2">
         <h4 className="text-lg font-semibold">{item.title}</h4>
