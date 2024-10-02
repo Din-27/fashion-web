@@ -1,3 +1,4 @@
+import FooterNavWrapper from '../src/components/Wrapper/FooterNavWrapper';
 import './global.css'
 
 export default function RootLayout({
@@ -7,7 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <FooterNavWrapper>
+        <body>{children}</body>
+      </FooterNavWrapper>
     </html>
   );
 }

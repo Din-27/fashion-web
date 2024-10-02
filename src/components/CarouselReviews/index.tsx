@@ -1,13 +1,15 @@
-import React from 'react'
-import Card from './Card'
+import React from "react";
+import Card from "./Card";
 
-export default function index({ title, data }: { title: string, data: any[] }) {
-    return (
-        <div className="flex flex-col justify-center items-center lg:space-y-4 space-y-2 py-14 lg:px-24 px-8">
-            <h2 className="text-left lg:text-5xl text-2xl font-bold ">{title}</h2>
-            <div className="flex overflow-x-auto gap-x-6 lg:py-3 py-4 mx-auto max-w-full">
-                {data.map(x => <Card />)}
-            </div>
-        </div>
-    )
+export default function index({ title, data }: { title: string; data: any[] }) {
+  return (
+    <div className="flex flex-col items-center justify-center space-y-2 px-8 py-14 lg:space-y-4 lg:px-24">
+      <h2 className="text-left text-2xl font-bold lg:text-5xl">{title}</h2>
+      <div className="mx-auto flex max-w-full gap-x-6 overflow-x-auto py-4 lg:py-3">
+        {data.map((x, y) => (
+          <Card key={y} />
+        ))}
+      </div>
+    </div>
+  );
 }
