@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "./Card";
-import { ProductDetailTypes } from "../../types/ProductDetail";
 
 export default function index(props: ProductDetailTypes.SellingCard<any[]>) {
   return (

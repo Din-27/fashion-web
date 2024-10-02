@@ -1,28 +1,35 @@
-import React from 'react'
-import { chooseFilterById } from '../../../utility/filter/chooseFilterGalleryCard'
+"use client";
+import React, { useState } from "react";
+import { chooseFilterById } from "../../../utility/filter/chooseFilterGalleryCard";
 
 export default function GalleryProductDetail(props: ProductDetailTypes.GalleryCard<any[]>) {
-    const state = { id: 1 }
-    return chooseFilterById(props, state.id) && chooseFilterById(props, state.id).map((x) =>
-        <div className="lg:grid grid-cols-4 flex flex-col-reverse gap-4">
-            <div className="lg:grid flex gap-4">
-                <div>
-                    <img className="max-w-full h-full rounded-lg"
-                        src={x.image || "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"} alt="" />
-                </div>
-                <div>
-                    <img className="max-w-full h-full rounded-lg"
-                        src={x.image || "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"} alt="" />
-                </div>
-                <div>
-                    <img className="max-w-full h-full rounded-lg"
-                        src={x.image || "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"} alt="" />
-                </div>
-            </div>
-            <div className="flex items-center border rounded-lg col-span-3">
-                <img className="max-w-full"
-                    src={x.image || "https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"} alt="" />
-            </div>
-        </div>
-    )
+  const [imageView, setImageView] = useState(1);
+  const { dataExtra, dataMain } = chooseFilterById(props, imageView);
+  const onClickImageView = (id: number) => setImageView(id);
+
+  return (
+    <div className="flex grid-cols-4 flex-col-reverse gap-4 lg:grid">
+      <div className="flex gap-4 lg:grid">
+        {dataExtra.map((x, y) => (
+          <div key={y} onClick={() => onClickImageView(x.id)}>
+            <img
+              className="h-full max-w-full rounded-lg"
+              src={x?.image || "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"}
+              alt=""
+            />
+          </div>
+        ))}
+      </div>
+      <div className="col-span-3 flex items-center mx-auto rounded-lg border px-4">
+        <img
+          className="h-[300px] max-w-full"
+          src={
+            dataMain[0]?.image ||
+            "https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
+          }
+          alt=""
+        />
+      </div>
+    </div>
+  );
 }
