@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Card({ index, item }) {
   return (
-    <div key={index} className="mx-auto">
+    <div key={index} className="mx-auto space-y-6 py-4">
       <div className="h-[196px] w-[195px] lg:h-[250px] lg:w-[255px]">
         <img
           className="h-[196px] w-[195px] rounded-3xl lg:h-[250px] lg:w-[255px]"
@@ -11,7 +11,7 @@ export default function Card({ index, item }) {
         />
       </div>
       <div className="label ml-2">
-        <h4 className="text-lg font-semibold">{item.title}</h4>
+        <h4 className="text-xl font-bold">{item.title}</h4>
         <div className="rating flex items-center space-x-2">
           <div className="flex items-center">
             <svg

@@ -13,22 +13,22 @@ import { chooseFilterById } from "../../../src/utility/filter/chooseFilterGaller
 const data = [
   {
     id: 1,
-    title: "T Shirt KAOS",
+    title: "Polo with Contrast Trims",
     image: "https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg",
   },
   {
     id: 2,
-    title: "T Shirt KAOS",
+    title: "Polo with Contrast Trims",
     image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
   },
   {
     id: 3,
-    title: "T Shirt KAOS",
+    title: "Polo with Contrast Trims",
     image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
   },
   {
     id: 4,
-    title: "T Shirt KAOS",
+    title: "Polo with Contrast Trims",
     image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
   },
 ];

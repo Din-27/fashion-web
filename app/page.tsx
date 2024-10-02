@@ -38,20 +38,22 @@ export default function Page() {
 
   return (
     <div className="my-4 space-y-8">
-      <SellingCard
-        data={productArrival}
-        title={"NEW ARRIVALS"}
-        buttonName={buttonNameArrival}
-        buttonClick={onClickViewAllArrival}
-        buttonShow
-      />
-      <SellingCard
-        data={productTopSelling}
-        title={"TOP SELLING"}
-        buttonName={buttonNameTopSelling}
-        buttonClick={onClickViewAllTopSelling}
-        buttonShow
-      />
+      <div className="px-8 lg:px-24">
+        <SellingCard
+          data={productArrival}
+          title={"NEW ARRIVALS"}
+          buttonName={buttonNameArrival}
+          buttonClick={onClickViewAllArrival}
+          buttonShow
+        />
+        <SellingCard
+          data={productTopSelling}
+          title={"TOP SELLING"}
+          buttonName={buttonNameTopSelling}
+          buttonClick={onClickViewAllTopSelling}
+          buttonShow
+        />
+      </div>
       <BrowseCategoryGallery data={undefined} />
       <CarouselReviews title={"OUR CUSTOMER HAPPY"} data={[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]} />
     </div>
