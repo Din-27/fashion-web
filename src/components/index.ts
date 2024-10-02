@@ -7,8 +7,10 @@ import CarouselReviews from "./CarouselReviews";
 import GalleryProduct from "./ProductDetail/Gallery";
 import BrowseCategoryGallery from "./BrowseCategoryGallery";
 import DescriptionProductDetail from "./ProductDetail/Description";
+import FilterWeb from "./Filter/FilterWeb";
 
 export {
+  FilterWeb,
   Footer,
   Review,
   Breadcumb,
