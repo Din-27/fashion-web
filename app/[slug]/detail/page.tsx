@@ -39,7 +39,7 @@ const dataButtonGroups = [
   { name: "FAQs", path: "faqs", active: false },
 ];
 
-const dataReviews = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].slice(0, 6);
+const dataReviews = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 
 export default function page() {
   const [imageView, setImageView] = useState(1);
