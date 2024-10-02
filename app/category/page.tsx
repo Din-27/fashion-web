@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Breadcumb } from '../../src/components';
+import { Breadcumb } from "../../src/components";
 
 export default function page() {
   return (
