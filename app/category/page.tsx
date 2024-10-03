@@ -5,7 +5,7 @@ import ArrowRight from "../../src/assets/arrow-right.svg";
 import FilterIcon from "../../src/assets/filter-icon.svg";
 import { data } from "../../src/data/products";
 import Pagination from "../../src/components/Pagination";
-import { Breadcumb, FilterWeb, ProductCard } from "../../src/components";
+import { Breadcumb, Drawer, FilterWeb, ProductCard } from "../../src/components";
 
 const FilterViewContext = () => {
   const [view, setView] = useState(true);
@@ -14,6 +14,8 @@ const FilterViewContext = () => {
 };
 
 export default function page() {
+  const [transform, setTransform] = useState(false);
+  const clickTransform = () => setTransform((prev) => (prev ? false : true));
   return (
     <div className="min-h-screen px-4 py-4 lg:space-y-28 lg:px-24">
       <div className="space-y-6">
@@ -23,7 +25,10 @@ export default function page() {
           <div className="flex-1">
             <div className="flex justify-between">
               <h3 className="mb-2 text-5xl font-bold">Casual</h3>
-              <button className="block rounded-full bg-gray-100 px-4 lg:hidden">
+              <button
+                onClick={clickTransform}
+                className="block rounded-full bg-gray-100 px-4 lg:hidden"
+              >
                 <img src={FilterIcon.src} alt="" />
               </button>
             </div>
@@ -46,6 +51,7 @@ export default function page() {
           </div>
         </div>
       </div>
+      <Drawer transform={transform} context={FilterViewContext} closeView={clickTransform} />
     </div>
   );
 }

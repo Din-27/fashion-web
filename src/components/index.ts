@@ -1,5 +1,6 @@
 import ProductCard from "./SellingCard/Card";
 import Footer from "./Footer";
+import Drawer from "./Drawer";
 import Review from "./ProductDetail/Review";
 import ButtonGroups from "./ProductDetail/ButtonGroups";
 import Breadcumb from "./ProductDetail/Breadcumb";
@@ -11,6 +12,7 @@ import DescriptionProductDetail from "./ProductDetail/Description";
 import FilterWeb from "./Filter/FilterWeb";
 
 export {
+  Drawer,
   ProductCard,
   FilterWeb,
   Footer,
