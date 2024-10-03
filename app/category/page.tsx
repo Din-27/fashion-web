@@ -23,7 +23,7 @@ export default function page() {
           <div className="flex-1">
             <div className="flex justify-between">
               <h3 className="mb-2 text-5xl font-bold">Casual</h3>
-              <button className="block rounded-full px-4 bg-gray-100 lg:hidden">
+              <button className="block rounded-full bg-gray-100 px-4 lg:hidden">
                 <img src={FilterIcon.src} alt="" />
               </button>
             </div>
@@ -31,14 +31,14 @@ export default function page() {
               {data.map((x, y) => (
                 <ProductCard key={y} index={y} item={x} height={"160px"} width={"160px"} />
               ))}
-              <div className="col-span-2 mt-8 flex w-full justify-between lg:col-span-3">
-                <button className="flex items-center space-x-4 rounded-lg border px-4 py-2">
+              <div className="col-span-2 mt-8 flex w-full items-center justify-between lg:col-span-3">
+                <button className="flex items-center space-x-2 rounded-lg border px-2 py-2 lg:space-x-4 lg:px-4">
                   <img src={ArrowLeft.src} alt="" />
-                  <span className="text-lg font-semibold">Previous</span>
+                  <span className="font-semibold lg:text-lg">Previous</span>
                 </button>
                 <Pagination />
-                <button className="flex items-center space-x-4 rounded-lg border px-4 py-2">
-                  <span className="text-lg font-semibold">Next</span>
+                <button className="flex items-center space-x-2 rounded-lg border px-2 py-2 lg:space-x-4 lg:px-4">
+                  <span className="font-semibold lg:text-lg">Next</span>
                   <img src={ArrowRight.src} alt="" />
                 </button>
               </div>
