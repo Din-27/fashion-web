@@ -3,4 +3,3 @@ declare namespace BrowseCategoryTypes {
       data: T;
     };
   }
-  
