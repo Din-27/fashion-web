@@ -11,7 +11,7 @@ export default function ListFilter({ view, data }) {
         <div className="flex items-center justify-between">
           <label
             htmlFor={x.label}
-            className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            className="ms-2 text-xl font-medium text-gray-900 dark:text-gray-300"
           >
             {x.label}
           </label>
@@ -20,7 +20,7 @@ export default function ListFilter({ view, data }) {
             type="checkbox"
             value=""
             checked={x.check}
-            className="h-4 w-4 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
+            className="h-5 w-5 rounded border-gray-300 bg-gray-100 text-blue-600 focus:ring-2 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-blue-600"
           />
         </div>
       ))}

@@ -1,11 +1,23 @@
 import React from "react";
 
-export default function Card({ index, item }) {
+export default function Card({
+  index,
+  item,
+  width,
+  height,
+}: {
+  index: any;
+  item: any;
+  width?: any;
+  height?: any;
+}) {
   return (
     <div key={index} className="mx-auto space-y-6 py-4">
-      <div className="h-[196px] w-[195px] lg:h-[250px] lg:w-[255px]">
+      <div
+        className={`${Boolean(height) ? `h-[${height}]` : "h-[196px]"} ${Boolean(width) ? `w-[${width}]` : "w-[195px]"} lg:h-[250px] lg:w-[255px]`}
+      >
         <img
-          className="h-[196px] w-[195px] rounded-3xl lg:h-[250px] lg:w-[255px]"
+          className={`${Boolean(height) ? `h-[${height}]` : "h-[196px]"} ${Boolean(width) ? `w-[${width}]` : "w-[195px]"} rounded-3xl lg:h-[250px] lg:w-[255px]`}
           src={item.image}
           alt=""
         />
