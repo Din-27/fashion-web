@@ -3,7 +3,7 @@ import React from "react";
 export default function DescriptionProductDetail() {
   return (
     <div className="my-4 space-y-2 lg:space-y-4 lg:space-y-6">
-      <div className='space-y-2'>
+      <div className="space-y-2">
         <h3 className="text-2xl font-bold lg:text-4xl">One Life Graphic T-shirt</h3>
         <div className="rating flex items-center space-x-2">
           <div className="flex items-center">
@@ -144,13 +144,13 @@ export default function DescriptionProductDetail() {
           </button>
         </div>
       </div>
-      <div className="flex space-x-4 lg:pt-0 pt-4">
+      <div className="flex space-x-4 pt-4 lg:pt-0">
         <div>
           <label htmlFor="Quantity" className="sr-only">
             {" "}
             Quantity{" "}
           </label>
-          <div className="flex items-center rounded-full border border-gray-200 bg-gray-200 lg:py-2 py-1">
+          <div className="flex items-center rounded-full border border-gray-200 bg-gray-200 py-1 lg:py-2">
             <button
               type="button"
               className="size-10 leading-10 text-gray-600 transition hover:opacity-75"
@@ -160,7 +160,7 @@ export default function DescriptionProductDetail() {
             <input
               type="number"
               id="Quantity"
-              value="1"
+              defaultValue="1"
               className="h-10 w-16 border-transparent bg-gray-200 text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"
             />
             <button
@@ -171,7 +171,7 @@ export default function DescriptionProductDetail() {
             </button>
           </div>
         </div>
-        <button className="w-full rounded-full bg-black lg:py-2 text-white">Add to Cart</button>
+        <button className="w-full rounded-full bg-black text-white lg:py-2">Add to Cart</button>
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
 import ProductCard from "./SellingCard/Card";
+import OrderList from "./Cart/OrderList";
+import OrderSummary from "./Cart/OrderSummary";
 import Footer from "./Footer";
 import Drawer from "./Drawer";
 import Review from "./ProductDetail/Review";
@@ -12,6 +14,8 @@ import DescriptionProductDetail from "./ProductDetail/Description";
 import FilterWeb from "./Filter/FilterWeb";
 
 export {
+  OrderList,
+  OrderSummary,
   Drawer,
   ProductCard,
   FilterWeb,
