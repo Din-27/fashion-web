@@ -5,14 +5,14 @@ import InputQuantity from '../Input/InputQuantity';
 export default function OrderList({ dataOrder }) {
   return (
     <div className="space-y-6 rounded-xl border p-4">
-      <ul className="space-y-4">
+      <ul className="">
         {dataOrder.map((x, y) => (
-          <li key={y} className="flex items-center gap-4">
+          <li key={y} className="flex gap-4 border-b py-4">
             <div className="rounded-xl border bg-gray-100 p-4">
               <img src={Item.src} alt="" className="size-24 rounded object-cover" />
             </div>
 
-            <div>
+            <div className='my-auto'>
               <h3 className="text-xl font-bold text-gray-900">Basic Tee 6-Pack</h3>
 
               <dl className="mt-0.5 space-y-px text-[10px] text-gray-600">
@@ -28,7 +28,7 @@ export default function OrderList({ dataOrder }) {
               </dl>
             </div>
 
-            <div className="ml-auto flex flex-col items-center gap-2">
+            <div className="ml-auto h-full space-y-10 my-4 flex flex-col items-center gap-2">
               <button className="text-gray-600 transition hover:text-red-600">
                 <span className="sr-only">Remove item</span>
 
@@ -38,7 +38,7 @@ export default function OrderList({ dataOrder }) {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="size-4"
+                  className="size-6 text-red-600 font-bold"
                 >
                   <path
                     strokeLinecap="round"
@@ -47,7 +47,6 @@ export default function OrderList({ dataOrder }) {
                   />
                 </svg>
               </button>
-
               <InputQuantity />
             </div>
           </li>

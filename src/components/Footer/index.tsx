@@ -4,7 +4,7 @@ export default function index() {
   return (
     <div className="relative mt-44 bg-[#F0F0F0]">
       <div className="subcribe absolute -top-24 w-full px-8 pb-4 lg:px-24">
-        <div className="grid grid-cols-1 items-center gap-x-6 rounded-lg bg-black px-10 py-6 lg:py-10 lg:grid-cols-4">
+        <div className="grid grid-cols-1 items-center gap-x-6 rounded-3xl bg-black px-10 py-6 lg:grid-cols-4 lg:py-10">
           <h2 className="text-left text-2xl font-bold text-white lg:col-span-3 lg:w-2/3 lg:text-5xl">
             STAY UPTO DATE ABOUT OUR LATEST OFFERS
           </h2>
@@ -25,11 +25,11 @@ export default function index() {
               <input
                 type="text"
                 id="input-group-1"
-                className="block w-full rounded-full border border-gray-300 bg-gray-50 px-2.5 lg:py-4 py-2.5 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500"
+                className="block w-full rounded-full border border-gray-300 bg-gray-50 px-2.5 py-2.5 ps-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 lg:py-3"
                 placeholder="name@flowbite.com"
               />
             </div>
-            <button className="block w-full rounded-full border border-gray-300 bg-gray-50 px-2 lg:py-4 py-2 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500">
+            <button className="block w-full rounded-full border border-gray-300 bg-gray-50 px-2 py-2 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 lg:py-3">
               Subscribe to Newsletter
             </button>
           </form>
@@ -89,8 +89,8 @@ export default function index() {
             </div>
 
             <p className="mt-4 max-w-xs text-gray-500">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
-              molestias.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
+              cupiditate quae nam molestias.
             </p>
 
             <ul className="mt-8 flex gap-6">
@@ -218,35 +218,50 @@ export default function index() {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     1on1 Coaching{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Company Review{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Accounts Review{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     HR Consulting{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     SEO Optimisation{" "}
                   </a>
@@ -259,21 +274,30 @@ export default function index() {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     About{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Meet the Team{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Accounts Review{" "}
                   </a>
@@ -286,21 +310,30 @@ export default function index() {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Contact{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     FAQs{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Live Chat{" "}
                   </a>
@@ -313,28 +346,40 @@ export default function index() {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Accessibility{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Returns Policy{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Refund Policy{" "}
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" className="text-gray-700 transition hover:opacity-75">
+                  <a
+                    href="#"
+                    className="text-gray-700 transition hover:opacity-75"
+                  >
                     {" "}
                     Hiring Statistics{" "}
                   </a>
@@ -344,7 +389,9 @@ export default function index() {
           </div>
         </div>
 
-        <p className="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
+        <p className="text-xs text-gray-500">
+          &copy; 2022. Company Name. All rights reserved.
+        </p>
       </div>
     </div>
   );

@@ -7,8 +7,6 @@ export default function ButtonGroups({
   navigations: any[];
   buttonPathActive: any;
 }) {
-  console.log(navigations);
-
   return (
     <div className="border-gray-200 text-center text-sm font-medium text-gray-500">
       <ul className="-mb-px flex w-full grid-cols-3 gap-0 overflow-x-auto border-b text-base lg:grid lg:text-2xl">
