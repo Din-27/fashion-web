@@ -4,7 +4,7 @@ import InputQuantity from '../Input/InputQuantity';
 
 export default function OrderList({ dataOrder }) {
   return (
-    <div className="space-y-6 rounded-xl border p-4">
+    <div className="space-y-6">
       <ul className="">
         {dataOrder.map((x, y) => (
           <li key={y} className="flex gap-4 border-b py-4">
