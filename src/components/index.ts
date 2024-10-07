@@ -10,7 +10,7 @@ import SellingCard from "./SellingCard";
 import CarouselReviews from "./CarouselReviews";
 import GalleryProduct from "./ProductDetail/Gallery";
 import BrowseCategoryGallery from "./BrowseCategoryGallery";
-import DescriptionProductDetail from "./ProductDetail/Description";
+import DescriptionProductDetail from "./ProductDetail/DescriptionProductDetail";
 import FilterWeb from "./Filter/FilterWeb";
 
 export {

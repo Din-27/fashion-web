@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function index(props: any) {
+export default function Review(props: any) {
   return (
     <div className="mt-6 space-y-4">
       <span className="ml-5 flex items-center">

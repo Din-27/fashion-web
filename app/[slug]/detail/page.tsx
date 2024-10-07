@@ -47,10 +47,12 @@ export default function page() {
   const onClickImageView = (id: number) => setImageView(id);
   const [pathActive, setPathActive] = useState("rating_reviews");
   const onClickBtnGroup = (nav: string) => setPathActive(nav);
-  const dataBtnGroup = dataButtonGroups.map((x) => {
-    x.active = x.path === pathActive ? true : false;
-    return x;
-  });
+  const dataBtnGroup =
+    dataButtonGroups &&
+    dataButtonGroups.map((x) => {
+      x.active = x.path === pathActive ? true : false;
+      return x;
+    });
 
   return (
     <div className="space-y-28 px-8 py-4 lg:px-24">

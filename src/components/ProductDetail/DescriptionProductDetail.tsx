@@ -1,4 +1,5 @@
 import React from "react";
+import InputQuantity from "../Input/InputQuantity";
 
 export default function DescriptionProductDetail() {
   return (
@@ -145,32 +146,7 @@ export default function DescriptionProductDetail() {
         </div>
       </div>
       <div className="flex space-x-4 pt-4 lg:pt-0">
-        <div>
-          <label htmlFor="Quantity" className="sr-only">
-            {" "}
-            Quantity{" "}
-          </label>
-          <div className="flex items-center rounded-full border border-gray-200 bg-gray-200 py-1 lg:py-2">
-            <button
-              type="button"
-              className="size-10 leading-10 text-gray-600 transition hover:opacity-75"
-            >
-              &minus;
-            </button>
-            <input
-              type="number"
-              id="Quantity"
-              defaultValue="1"
-              className="h-10 w-16 border-transparent bg-gray-200 text-center [-moz-appearance:_textfield] sm:text-sm [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none"
-            />
-            <button
-              type="button"
-              className="size-10 leading-10 text-gray-600 transition hover:opacity-75"
-            >
-              +
-            </button>
-          </div>
-        </div>
+        <InputQuantity className="flex items-center rounded-full border border-gray-200 bg-gray-200 py-1 lg:py-2" />
         <button className="w-full rounded-full bg-black text-white lg:py-2">Add to Cart</button>
       </div>
     </div>
